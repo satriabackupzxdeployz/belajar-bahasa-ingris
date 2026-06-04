@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><title>Login Siswa</title>
+<link rel="stylesheet" href="css/style.css"></head><body>
+<div class='card'><h2>Login Siswa</h2>
+<input id='nama' placeholder='Nama'><br><br>
+<input id='absen' placeholder='Absen'><br><br>
+<select id='kelas'><option>SD 1</option><option>SD 2</option><option>SD 3</option><option>SD 4</option><option>SD 5</option><option>SD 6</option><option>SMP 1</option><option>SMP 2</option><option>SMP 3</option><option>SMA 1</option><option>SMA 2</option><option>SMA 3</option></select><br><br>
+<button onclick='login()'>Masuk</button></div>
+<script>
+function login(){
+localStorage.setItem('nama',nama.value);
+localStorage.setItem('absen',absen.value);
+localStorage.setItem('kelas',kelas.value);
+location='dashboard-siswa.html';
+}
+</script></body></html>
